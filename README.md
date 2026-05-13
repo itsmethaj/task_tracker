@@ -1,47 +1,49 @@
 # Task Manager
 
-A minimal to-do list app built with Django.
+A simple to-do app I built with Django. Nothing fancy — just a clean way to manage tasks with login, due dates, and a dashboard to see what's going on.
 
-## Features
+---
 
-- User signup and login
-- Create, edit, delete, and view tasks
-- Task status: Pending / Completed
-- Due date validation
-- Dashboard with task counts
+## What it does
 
-## Tech Stack
+- Sign up and log in
+- Create, edit, and delete tasks
+- Mark tasks as Pending or Completed
+- Set due dates (with validation so you can't break things)
+- Dashboard that shows your task counts at a glance
 
-- Python / Django
+---
+
+## Built with
+
+- Python & Django
 - SQLite
-- HTML & CSS
-- Bootstrap
+- HTML, CSS & Bootstrap
 
-## Getting Started
+---
 
-### 1. Clone the repo
+## Running it locally
+
+```bash
 git clone https://github.com/itsmethaj/task-manager.git
 cd task-manager
 
-### 2. Create a virtual environment
 python -m venv .venv
-source .venv/bin/activate  
-# On Windows: .venv\Scripts\activate
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
 
-### 3. Install dependencies
 pip install django
 
-### 4. Run migrations
 python manage.py migrate
-
-### 5. Start the server
 python manage.py runserver
+```
 
-### 6. Open in browser
-http://127.0.0.1:8000
+Then open `http://127.0.0.1:8000` in your browser.
 
-## Project Structure
+---
 
+## Project structure
+
+```
 task-manager/
 ├── manage.py
 ├── db.sqlite3
@@ -51,7 +53,4 @@ task-manager/
 │   ├── urls.py
 │   └── templates/
 └── requirements.txt
-
-## Author
-
-Thaj — github.com/itsmethaj
+```
